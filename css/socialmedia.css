@@ -1,0 +1,50 @@
+.instagram {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 115px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.instagram img {
+    margin-top: -20px;
+}
+
+.instagram img:hover {
+    margin-top: 0px;
+}
+
+.tiktok {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 65px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.tiktok img {
+    margin-top: -20px;
+}
+
+.tiktok img:hover {
+    margin-top: 0px;
+}
+
+.mail {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.mail img {
+    margin-top: -20px;
+}
+
+.mail img:hover {
+    margin-top: 0px;
+}

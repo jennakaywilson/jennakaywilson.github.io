@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    padding: 10px;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+.spacer {
+  border-top: 0.1px solid #5d6366;
+}
+
+h1 {
+  font-family: 'Figtree', sans-serif;
+  font-size: 14pt;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-family: 'Figtree', sans-serif;
+  font-size: 13pt;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  font-family: 'Figtree', sans-serif;
+  font-size: 12pt;
+  letter-spacing: 0.1em;
+  line-height: 2.3em;
+  text-align: justify;
+}
+
+/* Footer */
+.footer {
+    padding: 15px;
+    text-align: right;
+    margin-top: 20px;
+}
+  
+  /* Three columns */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+  .caption {
+    right: 30%;
+    float: right;
+    height: 15px;
+    font-size: 10px;
+    color: #5d6366;
+}
+
+  /* Left and right column gallery*/
+  .column.side.gallery {
+    width: 33.33%;
+  }
+
+  /* Middle column */
+  .column.middle.gallery {
+    width: 33.33%;
+  }
+
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .column.side.gallery, .column.middle.gallery {
+      width: 100%;
+    }
+  }
