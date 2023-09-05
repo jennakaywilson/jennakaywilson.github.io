@@ -9,8 +9,43 @@ body {
     letter-spacing: 0.1em;
 }
 
-.spacer {
-  border-top: 0.1px solid #5d6366;
+/* Navigation menu on small screen */
+.header {
+  font-family: 'Figtree', sans-serif;
+  color: black;
+  text-decoration: none;
+  font-size: 11.8pt;
+  display: block;
+  padding: 12px;
+  padding-right: 30px;
+  text-align: right;
+  z-index: 4;
+}
+
+#header {
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  color: black;
+}
+
+.topnavresponsive{
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 265px;
+    z-index: 2;
+    background-color: white;
+    border-bottom: 0.1px solid #5d6366;
+}
+
+.header:hover {
+  color: #0e5f8f;
+}
+
+.main {
+  margin-top: 65px;
 }
 
 h1 {
@@ -34,7 +69,7 @@ h3 {
 }
 
 /* Footer */
-.footer {
+footer {
     background-color: white;
     position: fixed;
     left: 0;
@@ -62,6 +97,17 @@ h3 {
   .column.middle {
     width: 50%;
   }
+
+  /*CV Dates column*/
+  .cvdate {
+    width: 33.33%;
+  }
+
+  /*CV Content column*/
+  .cvcontent{
+    width: 66.66%;  
+  }
+
   
   /* Clear floats after the columns */
   .row::after {
@@ -108,3 +154,94 @@ h3 {
       width: 100%;
     }
   }
+
+  /* Image Hover Effect */
+  .column.side.gallery.home{
+    position: relative;
+  }
+  
+  .column.middle.gallery.home{
+    position: relative;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .center {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .column.side.gallery.home:hover .image {
+    opacity: 0.3;
+  }
+
+  .column.middle.gallery.home:hover .image {
+    opacity: 0.3;
+  }
+  
+  .column.side.gallery.home:hover .center {
+    opacity: 1;
+  }
+
+  .column.middle.gallery.home:hover .center {
+    opacity: 1;
+  }
+  
+  /* Text Box Hover Effect */
+  .link {
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: black;
+    background-color: whitesmoke;
+    padding: 3px 9px;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+  .link:hover {
+    color: #0e5f8f;
+    background-color: none;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  /* When the screen is less than 600 pixels wide, show images as links */
+@media screen and (max-width: 700px) {
+  .column.side.gallery, .column.middle.gallery{
+    opacity: .9;
+  }
+  .center {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .link {
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: black;
+    background-color: whitesmoke;
+    padding: 8px 32px;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+}
+

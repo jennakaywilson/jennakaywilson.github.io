@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--Stylesheets-->
+        <link rel="stylesheet" href="../../css/layout.css">
+        <link rel="stylesheet" href="../../css/socialmedia.css">
+        <link rel="stylesheet" href="../../css/hamburgermenu.css">
+        <link rel="stylesheet" href="../../css/dropdown.css">
+        <link rel="stylesheet" href="../../css/lightbox.css">
+    <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <!--Responsive Webpage-->   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Page Title-->
+    <title>Jenna Wilson-Home</title>
+    <link rel="icon" type="image/x-icon" href="../../logos/icon.jpg">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WRFEGCBGG"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5WRFEGCBGG');
+    </script>
+        <body>
+    <!--Page Navigation-->
+   <div class="homelink">
+    <div class="logo">
+      <a href="../../index.html">
+        <img src="../../images/SignatureLogo.jpg" alt="Jenna Wilson Logo" width="200rem">
+      </a>
+    </div>
+  </div>
+    
+         <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" id="header"></i>
+              </a>
+            <div>
+                <a class="header" href="#home"> </a>
+                <a class="header" href="#home"> </a>
+                <a class="header" href="../Resume/Resume.html">CV</a>
+                <a class="header" href="../Bio/Bio.html">Bio</a>
+                <a class="header" href="mailto:jennawilson817@gmail.com">Contact</a> 
+                <a class="header" id="response" href="../2023/2023.html">2023</a>
+                <a class="header" id="response" href="../2022/2022.html">2022</a>
+                
+                  <div class="dropdown" id="buffer">
+                    <a class="dropbtn">2022
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="../2022/2022.html">2022
+                        <i class="fa fa-caret-down"></i>
+                      </a>
+                      <a href="../2022/Psychosis.html">Psychosis</a>
+                    </div>
+                  </div> 
+               
+                  <div class="dropdown">
+                    <a class="dropbtn"> 2023 
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="2023.html">2023 
+                        <i class="fa fa-caret-down"></i>
+                      </a>
+                      <a href="#Trash">Trash</a>
+                      <a href="Summer.html">Summer</a>
+                    </div>
+                  </div> 
+                
+            </div>
+          </div>
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += "responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>            
+    <!--Meat of the page-->      
+
+      <body>
+       <div class="main">
+        <div class="row">
+          <div class="col end">
+             <img src="TrashImages/BananaPeel.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Banana Peel Illustration"/>
+             <p class="caption">"Banana Peel" Micron Pen Drawing. 5 1/2" x 8 1/4" </p>
+          </div>
+          <div class="col mid">
+             <img src="TrashImages/Receipt.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Receipt Illustration"/>
+             <p class="caption">"Receipt" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col end">
+             <img src="TrashImages/JuiceBox.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="JuiceBox Illustration"/>
+             <p class="caption">"JuiceBox" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col end">
+             <img src="TrashImages/Noodles.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" alt="Noodles Illustration"/>
+             <p class="caption">"Noodles" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col mid">
+             <img src="TrashImages/PastryWrapper.jpg" onclick="openLightbox();toSlide(5)" class="hover-shadow preview" alt="Pastry Wrapper Illustration"/>
+             <p class="caption">"Pastry Wrapper" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col end">
+             <img src="TrashImages/CigarettesandMelon.jpg" onclick="openLightbox();toSlide(6)" class="hover-shadow preview" alt="Cigarettes and Melon Illustration" />
+             <p class="caption">"Cigarettes and Melon" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col end">
+             <img src="TrashImages/CigaretteandComb.jpg" onclick="openLightbox();toSlide(7)" class="hover-shadow preview" alt="Cigarette and Comb Illustration"/>
+             <p class="caption">"Cigarette and Comb" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col mid">
+             <img src="TrashImages/Lid.jpg" onclick="openLightbox();toSlide(8)" class="hover-shadow preview" alt="Lid Illustration"/>
+             <p class="caption">"Lid" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col end">
+             <img src="TrashImages/Sock.jpg" onclick="openLightbox();toSlide(9)" class="hover-shadow preview" alt="Sock Illustration" />
+             <p class="caption">"Sock" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col end">
+             <img src="TrashImages/Sticker.jpg" onclick="openLightbox();toSlide(10)" class="hover-shadow preview" alt="Sticker Illustration"/>
+             <p class="caption">"Sticker" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col mid">
+             <img src="TrashImages/BigMacBox.jpg" onclick="openLightbox();toSlide(11)" class="hover-shadow preview" alt="Big Mac Box Illustration"/>
+             <p class="caption">"Big Mac Box" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col end">
+             <img src="TrashImages/Napkin2.jpg" onclick="openLightbox();toSlide(12)" class="hover-shadow preview" alt="Napkin Illustration" />
+             <p class="caption">"Napkin 2" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col end">
+             <img src="TrashImages/Balloon.jpg" onclick="openLightbox();toSlide(13)" class="hover-shadow preview" alt="Balloon Illustration"/>
+             <p class="caption">"Balloon" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col mid">
+             <img src="TrashImages/IceCreamWrapper1.jpg" onclick="openLightbox();toSlide(14)" class="hover-shadow preview" alt="Ice Cream Wrapper Illustration"/>
+             <p class="caption">"Ice Cream Wrapper 1" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col end">
+             <img src="TrashImages/CigaretteandStick.jpg" onclick="openLightbox();toSlide(15)" class="hover-shadow preview" alt="Cigarette and Stick Illustration" />
+             <p class="caption">"Cigarette and Stick" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col end">
+             <img src="TrashImages/Goggles.jpg" onclick="openLightbox();toSlide(16)" class="hover-shadow preview" alt="Goggles Illustration"/>
+             <p class="caption">"Goggles" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col mid">
+             <img src="TrashImages/ShoppingCart.jpg" onclick="openLightbox();toSlide(17)" class="hover-shadow preview" alt="Shopping Cart Illustration"/>
+             <p class="caption">"Shopping Cart" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col end">
+             <img src="TrashImages/Batteries.jpg" onclick="openLightbox();toSlide(18)" class="hover-shadow preview" alt="Batteries Illustration" />
+             <p class="caption">"Batteries" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col end">
+             <img src="TrashImages/IceCreamWrapper2.jpg" onclick="openLightbox();toSlide(19)" class="hover-shadow preview" alt="Ice Cream Wrapper Illustration"/>
+             <p class="caption">"Ice Cream Wrapper 2" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col mid">
+             <img src="TrashImages/Napkin1.jpg" onclick="openLightbox();toSlide(20)" class="hover-shadow preview" alt="Napkin Illustration"/>
+             <p class="caption">"Napkin 1" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col end">
+             <img src="TrashImages/CautionTape.jpg" onclick="openLightbox();toSlide(21)" class="hover-shadow preview" alt="Caution Tape Illustration" />
+             <p class="caption">"Caution Tape" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col end">
+             <img src="TrashImages/CigaretteButts.jpg" onclick="openLightbox();toSlide(22)" class="hover-shadow preview" alt="Cigarette Butts Illustration"/>
+             <p class="caption">"Cigarette Butts" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col mid">
+             <img src="TrashImages/Pills.jpg" onclick="openLightbox();toSlide(23)" class="hover-shadow preview" alt="Pills Illustration"/>
+             <p class="caption">"Pills" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col end">
+             <img src="TrashImages/ChipBag.jpg" onclick="openLightbox();toSlide(24)" class="hover-shadow preview" alt="Chip Bag Illustration" />
+             <p class="caption">"Chip Bag" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col end">
+             <img src="TrashImages/BurgerKingCup.jpg" onclick="openLightbox();toSlide(25)" class="hover-shadow preview" alt="Burger King Cup Illustration"/>
+             <p class="caption">"Burger King Cup" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col mid">
+             <img src="TrashImages/SodaCan.jpg" onclick="openLightbox();toSlide(26)" class="hover-shadow preview" alt="SodaCan Illustration"/>
+             <p class="caption">"Soda Can" Micron Pen Drawing. 5 1/2" x 8 1/4"</p>
+          </div>
+          <div class="col end">
+          </div>
+        </div>
+        
+        
+        <div id="Lightbox" class="modal">
+        
+          <span class="close pointer" onclick="closeLightbox()">&times;</span>
+          <div class="modal-content">
+            <div class="slide">
+              <img src="TrashImages/BananaPeel.png" class="image-slide" alt="Illustration of a Banana Peel" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Receipt.png" class="image-slide" alt="Receipt Illustration" />
+            </div>    
+            <div class="slide">
+              <img src="TrashImages/JuiceBox.png" class="image-slide" alt="JuiceBox Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Noodles.png" class="image-slide" alt="Noodles Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/PastryWrapper.png" class="image-slide" alt="Pastry Wrapper Illustration" />
+            </div>    
+            <div class="slide">
+              <img src="TrashImages/CigarettesandMelon.png" class="image-slide" alt="Cigarettes and Melon Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/CigaretteandComb.png" class="image-slide" alt="Cigarettes and Comb Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Lid.png" class="image-slide" alt="Lid Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Sock.png" class="image-slide" alt="Sock Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Sticker.png" class="image-slide" alt="Sticker Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/BigMacBox.png" class="image-slide" alt="BigMacBox Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Napkin2.png" class="image-slide" alt="Napkin Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Balloon.png" class="image-slide" alt="Balloon Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/IceCreamWrapper1.png" class="image-slide" alt="Ice Cream Wrapper Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/CigaretteandStick.png" class="image-slide" alt="Cigarette and Stick Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Goggles.png" class="image-slide" alt="Goggles Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/ShoppingCart.png" class="image-slide" alt="Shopping Cart Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Batteries.png" class="image-slide" alt="Batteries Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/IceCreamWrapper2.png" class="image-slide" alt="Ice Cream Wrapper 2 Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Napkin1.png" class="image-slide" alt="Napkin Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/CautionTape.png" class="image-slide" alt="Caution Tape Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/CigaretteButts.png" class="image-slide" alt="Cigarette Butts Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/Pills.png" class="image-slide" alt="Pills Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/ChipBag.png" class="image-slide" alt="Chip Bag Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/BurgerKingCup.png" class="image-slide" alt="Burger King Cup Illustration" />
+            </div>
+            <div class="slide">
+              <img src="TrashImages/SodaCan.png" class="image-slide" alt="Soda Can Illustration" />
+            </div>
+          
+      
+            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                
+          </div> 
+        </div>
+        
+        <script>
+          let slideIndex = 1;
+          showSlide(slideIndex);
+          
+          function openLightbox() {
+            document.getElementById('Lightbox').style.display = 'block';
+          };
+          
+          function closeLightbox() {
+            document.getElementById('Lightbox').style.display = 'none';
+          };
+          
+          function changeSlide(n) {
+            showSlide(slideIndex += n);
+          };
+          
+          function toSlide(n) {
+            showSlide(slideIndex = n);
+          };
+          
+          function showSlide(n) {
+            const slides = document.getElementsByClassName('slide');
+            let modalPreviews = document.getElementsByClassName('modal-preview');
+          
+            if (n > slides.length) {
+              slideIndex = 1;	
+            };
+            
+            if (n < 1) {
+              slideIndex = slides.length;
+            };
+          
+            for (let i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            };
+            
+            for (let i = 0; i < modalPreviews.length; i++) {
+              modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+            };
+            
+            slides[slideIndex - 1].style.display = 'block';
+            modalPreviews[slideIndex - 1].className += ' active';
+          };
+        </script>
+       </div>  
+      </body>
+        
+
+    <!--Footer-->
+        <footer>
+            <div class="instagram">
+                <a href="https://www.instagram.com/jennakayart/?igshid=YmMyMTA2M2Y%3D">
+                    <img src="../../logos/Instagram_.png" alt="Instagram" width="100%">
+                </a>
+                Instagram
+            </div>
+            <div class="tiktok">
+                <a href="https://www.tiktok.com/@jennakaywilson">
+                    <img src="../../logos/Tik_Tok.png" alt="Tik Tok" width="100%">
+                </a>
+                Tik Tok
+            </div>
+            <div class="mail">
+                <a href="mailto:jennawilson817@gmail.com">
+                    <img src="../../logos/Mail.png" alt="Email" width="100%">
+                </a>
+                Contact
+            </div>
+          </footer>
+        
+        </body>
+        </html>
+        
+        
+</html>

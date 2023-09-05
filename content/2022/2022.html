@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="../../css/layout.css">
         <link rel="stylesheet" href="../../css/socialmedia.css">
         <link rel="stylesheet" href="../../css/hamburgermenu.css">
+        <link rel="stylesheet" href="../../css/dropdown.css">
     <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,73 +30,77 @@
     </script>
         <body>
     <!--Page Navigation-->
-         <div class="topnav" id="myTopnav">
-            <img src="../../logos/logo.jpg" alt="Jenna Wilson Logo" width="200rem">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
+    <div class="homelink">
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../images/SignatureLogo.jpg" alt="Jenna Wilson Logo" width="200rem">
+        </a>
+      </div>
+   </div>
+   <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" id="header"></i>
+      </a>
+    <div>
+        <a class="header" href="#home"> </a>
+        <a class="header" href="#home"> </a>
+        <a class="header" href="../Resume/Resume.html">CV</a>
+        <a class="header" href="../Bio/Bio.html">Bio</a>
+        <a class="header" href="mailto:jennawilson817@gmail.com">Contact</a> 
+        <a class="header" id="response" href="../2023/2023.html">2023</a>
+        <a class="header" id="response" href="#2022">2022</a>
+        
+          <div class="dropdown" id="buffer">
+            <a class="dropbtn">2022
+              <i class="fa fa-caret-down"></i>
             </a>
-            <div>
-              <a href="../../index.html">Home</a>
-              <a href="../2023/2023.html">2023</a>
-              <a href="#2022" class="active">2022</a>
-              <a href="../Resume/Resume.html">CV</a>
-              <a href="../Bio/Bio.html">Bio</a>
-              <a href="mailto:jennawilson817@gmail.com">Contact</a>
+            <div class="dropdown-content">
+              <a href="2022.html">2022
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <a href="../2022/Psychosis.html">Psychosis</a>
             </div>
-          </div>
+          </div> 
+        
+          <div class="dropdown">
+            <a class="dropbtn"> 2023 
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="../2023/2023.html">2023 
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <a href="../2023/Trash.html">Trash</a>
+              <a href="../2023/Summer.html">Summer</a>
+            </div>
+          </div> 
+    </div>
+  </div>
 <script>
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-</script>
-          
-          
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += "responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>        
     <!--Meat of the page-->      
-        <div class="spacer">
-            <br>
-        </div>
-            
-            <div class="row">
-              <div class="column side gallery">
-                <img class="image" src="Psychosis.jpeg" alt="Abstract Print" width="100%">
-                <p class="caption">"Psychosis." Lithographic Print. 11" x 15"</p>
-                <img class="image" src="Conglomerate2.jpg" alt="Conglomerate 2" width="100%">
-                <p class="caption">"Conglomerate 2." Digital. </p>
-                <img class="image" src="Conglomerate3.jpg" alt="Conglomerate 3" width="100%">
-                <p class="caption">"Conglomerate 3." Digital. </p>
-                <img class="image" src="FigureStudy.jpeg" alt="Figure Study" width="100%">
-                <p class="caption">"Figure Study" 7 1/2" x 5 1/2" </p>
-              </div>
-              
-              <div class="column middle gallery">
-                <img class="image" src="FadingLight.jpg" alt="Blinds" width="100%">
-                <p class="caption">"Fading Light." Photograph. </p>
-                <img class="image" src="Conglomerate1.jpg" alt="Conglomerate 1" width="100%">
-                <p class="caption">"Conglomerate 1." Digital. </p>
-                <img class="image" src="Conglomerate4.jpg" alt="Conglomerate 4" width="100%">
-                <p class="caption">"Conglomerate 4." Digital. </p>
-                <img class="image" src="Conglomerate7.jpg" alt="Conglomerate 7" width="100%">
-                <p class="caption">"Conglomerate 7." Digital. </p>
-              </div>
-              
-              <div class="column side gallery">
-                <img class="image" src="Masking.jpeg" alt="Masking" width="100%">
-                <p class="caption">"Masking." Intaglio Print. 11" x 15" </p>
-                <img class="image" src="Conglomerate5.jpg" alt="Conglomerate 5" width="100%">
-                <p class="caption">"Conglomerate 5." Digital. </p>
-                <img class="image" src="Conglomerate6.jpg" alt="Conglomerate 6" width="100%">
-                <p class="caption">"Conglomerate 6." Digital. </p>
-              </div>
-
+      <div class="main">
+        <div class="column side gallery"></div>
+          
+          <div class="column middle gallery home">
+            <img class="image" src="../../images/PsychosisSquare.jpg" alt="Abstract Lithographic Print" width="100%">
+            <div class="center">
+              <a class="link" href="Psychosis.html">Psychosis</a>
             </div>
+          </div>
+      </div>
+    </div>
     <!--Footer-->
-          <div class="footer">
+          <footer>
             <div class="instagram">
                 <a href="https://www.instagram.com/jennakayart/?igshid=YmMyMTA2M2Y%3D">
                     <img src="../../logos/Instagram_.png" alt="Instagram" width="100%">
@@ -114,7 +119,7 @@
                 </a>
                 Contact
             </div>
-        </div>
+          </footer>
         
         </body>
         </html>

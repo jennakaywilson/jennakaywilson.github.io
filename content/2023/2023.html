@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="../../css/layout.css">
         <link rel="stylesheet" href="../../css/socialmedia.css">
         <link rel="stylesheet" href="../../css/hamburgermenu.css">
+        <link rel="stylesheet" href="../../css/dropdown.css">
     <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,63 +30,86 @@
 </script>
         <body>
     <!--Page Navigation-->
-         <div class="topnav" id="myTopnav">
-            <img src="../../logos/logo.jpg" alt="Jenna Wilson Logo" width="200rem">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+    <div class="homelink">
+    <div class="logo">
+      <a href="../../index.html">
+        <img src="../../images/SignatureLogo.jpg" alt="Jenna Wilson Logo" width="200rem">
+      </a>
+    </div>
+  </div>
+    
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" id="header"></i>
+      </a>
+    <div>
+        <a class="header" href="#home"> </a>
+        <a class="header" href="#home"> </a>
+        <a class="header" href="../Resume/Resume.html">CV</a>
+        <a class="header" href="../Bio/Bio.html">Bio</a>
+        <a class="header" href="mailto:jennawilson817@gmail.com">Contact</a> 
+        <a class="header" id="response" href="#2023">2023</a>
+        <a class="header" id="response" href="../2022/2022.html">2022</a>
+        
+          <div class="dropdown" id="buffer">
+            <a class="dropbtn">2022
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="2022.html">2022
+                <i class="fa fa-caret-down"></i>
               </a>
-              <div>
-                <a href="../../index.html">Home</a>
-                <a href="#2023" class="active">2023</a>
-                <a href="../2022/2022.html">2022</a>
-                <a href="../Resume/Resume.html">CV</a>
-                <a href="../Bio/Bio.html">Bio</a>
-                <a href="mailto:jennawilson817@gmail.com">Contact</a>
-              </div>
-          </div>
+              <a href="../2022/Psychosis.html">Psychosis</a>
+            </div>
+          </div> 
+        
+          <div class="dropdown">
+            <a class="dropbtn"> 2023 
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="../2023/2023.html">2023 
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <a href="../2023/Trash.html">Trash</a>
+              <a href="../2023/Summer.html">Summer</a>
+            </div>
+          </div> 
+    </div>
+  </div>
 <script>
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-</script>
-          
-          
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += "responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>       
     <!--Meat of the page-->      
-        <div class="spacer">
-            <br>
-        </div>
-            
-            <div class="row">
-              <div class="column side gallery">
-                <img class="image" src="../../content/2023/staticSummer.jpg" alt="Pool scene" width="100%">
-                <p class="caption">"Static Summer." Oil paint on canvas. 5' x 5' </p>
-              </div>
-              
-              <div class="column middle gallery">
-                <img class="image" src="float.jpg" alt="Pool scene" width="100%">
-                <p class="caption">"Float." Oil paint on canvas. Diptyc. 20 5/8" x 23 1/2" </p>
-              </div>
-              
-              <div class="column side gallery">
-                <img class="image" src="Abandon1.jpeg" alt="Almond Milk" width="100%">
-                <p class="caption">"Abandon 1." Photograph. </p>
-                <img class="image" src="Abandon2.jpeg" alt="Almond Milk" width="100%">
-                <p class="caption">"Abandon 2." Photograph. </p>
-                <img class="image" src="Abandon3.jpeg" alt="Almond Milk" width="100%">
-                <p class="caption">"Abandon 3." Photograph. </p>
-                <img class="image" src="Abandon4.jpeg" alt="Almond Milk" width="100%">
-                <p class="caption">"Abandon 4." Photograph. </p>
-              </div>
+<div class="main">   
+        <div class="row">
 
+          <div class="column middle gallery home" id="bufferleft">
+            <img class="image" src="../../images/StaticSummerSquare.jpg" alt="Pool scene" width="100%">
+            <div class="center">
+                  <a class="link" href="Summer.html">Summer</a>
             </div>
+          </div>
+          
+          <div class="column middle gallery home" id="bufferright">
+            <img class="image" src="../../images/Trash_ReceiptSquare.jpg" alt="Drawing of a receipt" width="100%">
+            <div class="center">
+              <a class="link" href="Trash.html">Trash</a>
+            </div>
+          </div>
+
+      </div>
+</div>             
     <!--Footer-->
-    <div class="footer">
+    <footer>
         <div class="instagram">
             <a href="https://www.instagram.com/jennakayart/?igshid=YmMyMTA2M2Y%3D">
                 <img src="../../logos/Instagram_.png" alt="Instagram" width="100%">
@@ -104,7 +128,7 @@
             </a>
             Contact
         </div>
-    </div>
+      </footer>
         
         </body>
         </html>

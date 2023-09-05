@@ -48,3 +48,49 @@
 .mail img:hover {
     margin-top: 0px;
 }
+
+.homelink {
+    position: fixed;
+    z-index: 3;
+}
+
+.logo {
+    position: absolute;
+    background-color: beige;
+    width: 200px;
+    height: 40px;
+    left: 16px;
+    top: 2px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.logo img{
+    margin-top: -64.92px;
+}
+
+.logo img:hover {
+    margin-top: 0px;
+}
+
+  /* Center Two Images */
+  #bufferleft {
+    left: 16.6666665%;
+    position: absolute;
+  }
+
+  #bufferright {
+    right: 16.6666665%;
+    position: absolute;
+  }
+
+  @media screen and (max-width: 700px) {
+    #bufferleft {
+        left: 0%;
+        position: relative;
+    }
+    #bufferright {
+        left: 0%;
+        position: relative;
+    }
+  }
