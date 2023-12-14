@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--Stylesheets-->
+        <link rel="stylesheet" href="../../css/layout.css">
+        <link rel="stylesheet" href="../../css/socialmedia.css">
+        <link rel="stylesheet" href="../../css/hamburgermenu.css">
+        <link rel="stylesheet" href="../../css/dropdown.css">
+        <link rel="stylesheet" href="../../css/lightbox.css">
+    <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <!--Responsive Webpage-->   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Page Title-->
+    <title>Jenna Wilson-Home</title>
+    <link rel="icon" type="image/x-icon" href="../../logos/icon.jpg">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WRFEGCBGG"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5WRFEGCBGG');
+    </script>
+        <body>
+    <!--Page Navigation-->
+    <div class="homelink">
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../images/SignatureLogo.jpg" alt="Jenna Wilson Logo" width="200rem">
+        </a>
+      </div>
+    </div>
+    
+         <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" id="header"></i>
+              </a>
+            <div>
+                <a class="header" href="#home"> </a>
+                <a class="header" href="#home"> </a>
+                <a class="header" href="../Resume/Resume.html">CV</a>
+                <a class="header" href="../Bio/Bio.html">Bio</a>
+                <a class="header" href="mailto:jennawilson817@gmail.com">Contact</a> 
+                <a class="header" id="response" href="../2023/2023.html">2023</a>
+                <a class="header" id="response" href="../2022/2022.html">2022</a>
+                
+                  <div class="dropdown" id="buffer">
+                    <a class="dropbtn">2022
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="../2022/2022.html">2022
+                        <i class="fa fa-caret-down"></i>
+                      </a>
+                      <a href="../2022/Psychosis.html">Psychosis</a>
+                    </div>
+                  </div> 
+                
+                  <div class="dropdown">
+                    <a class="dropbtn"> 2023 
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="2023.html">2023 
+                        <i class="fa fa-caret-down"></i>
+                      </a>
+                      <a href="Trash.html">Trash</a>
+                      <a href="#Summer">Summer</a>
+                      <a href="../2023/ARTED339.html">ARTED 339</a>
+                    </div>
+                 
+                </div>
+            </div>
+          </div>
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += "responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>     
+          
+    <!--Meat of the page-->      
+<body>
+  <div class="main">
+  <div class="row">
+    <div class="col end">
+      <img src="ARTED339Images/Multimedia Artifact 1.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Multimedia Artifact 1"/>
+      <p class="caption">"Multimedia Artifact 1" Little poster for an art classroom! Or any classroom really. It is a simple reminder to students that failure is not the end, they can do hard things!</p>
+    </div>
+    <div class="col mid">
+       <img src="ARTED339Images/Multimedia Artifact2.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Multimedia Artifact 2"/>
+       <p class="caption">"Multimedia Artifact 2" Invite to anyone and everyone to join art club! It is absolutley no stress and you will learn to draw like a Pro! </p>
+    </div>
+    <div class="col end">
+            <iframe width="100%" height="95%" src="https://www.youtube.com/embed/UEfWoHYns7g" title="Multimedia Artifact 3" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <p class="caption">Multimedia Artifact 3" An animated short drawing some trash invites all to join art club! No drawing is trash, no matter what you might think. </p>
+   </div>
+  </div>
+  <div class="row">
+    <div class="col end">
+      <img src="ARTED339Images/Portrait.png" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Portrait"/>
+      <p class="caption">Cutie little self-portrait with a sneaky twist. Surprise, I don't have horns. </p>
+    </div>
+    <div class="col mid">
+        <img src="ARTED339Images/Fox.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" alt="Fox"/>
+        <p class="caption">Fox made in Adobe Illustrator. Preciousl little thing, I tried to make it a bit chunky.</p>
+    </div>
+    <div class="col end">
+        <img height="80%" src="ARTED339Images/Race Car.png" onclick="openLightbox();toSlide(5)" class="hover-shadow preview" alt="Race Car"/>
+        <p class="caption">Speedy little Illustrator race car with an inspiring message. "The day you stop racing is the day you win the race." Don't forget to slow down sometimes.</p>
+   </div>
+  </div>
+  <div class="row">
+    <div class="col end">
+      <img src="ARTED339Images/DestinationPoster.png" onclick="openLightbox();toSlide(6)" class="hover-shadow preview" alt="Tourist Poster"/>
+      <p class="caption">Nice throwback to the mission with this one! I used to walk past those shoes every single day.</p>
+    </div>
+    <div class="col mid">
+        <img src="ARTED339Images/Shrek.jpg" onclick="openLightbox();toSlide(7)" class="hover-shadow preview" alt="Shrek"/>
+        <p class="caption">I was giggling the whole time I was making this poster. There is something so deeply funny to me about making a poster all about Shrek.</p>
+    </div>
+    <div class="col end">
+        <iframe height="90%" width="100%" src="https://www.youtube.com/embed/ObRCFxWZ79A" title="Rotoscope" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+        <p class="caption">I feel like I got some great ideas from this rotoscope! I did not realize that this is how old animations were made! I am excited to go further with this concept</p>
+   </div>
+  </div>
+  <div>
+    <div class="row">
+    <div class="col end">
+        <iframe width="100%" height="90%" src="https://www.youtube.com/embed/-LA6_y2l1ak" title="" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <p class="caption">Silly little shapes having a silly goofy time. It is a bit dizzing to watch.</p>
+    </div>
+    <div class="col mid">
+        <iframe width="100%" height="88%" src="https://www.youtube.com/embed/f7qhM0ieiSA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p class="caption">Just a 4-square animation based around the theme: "Things I like" consisting of reading, hammocking, sleeping, and eating noodles.</p>
+    </div>
+    <div class="col end">
+        <img src="ARTED339Images/Spacer.png" height="500px" onclick="openLightbox();toSlide()" class="hover-shadow preview" alt="Tourist Poster"/>
+      <p class="caption"></p>
+   </div>
+</div>
+  
+  
+   
+  
+  <div id="Lightbox" class="modal">
+  
+    <span class="close pointer" onclick="closeLightbox()">&times;</span>
+    <div class="modal-content">
+      <div class="slide">
+        <img src="ARTED339Images/Multimedia Artifact 1.jpg" class="image-slide" alt="Multimedia Artifact 1" />
+      </div>
+      <div class="slide">
+        <img src="ARTED339Images/Multimedia Artifact2.jpg" class="image-slide" alt="Multimedia Artifact 1" />
+      </div>  
+      <div class="slide">
+        <img src="ARTED339Images/Portrait.png" class="image-slide" alt="Self-portrait" />
+      </div>  
+      <div class="slide">
+        <img src="ARTED339Images/Fox.jpg" class="image-slide" alt="Fox" />
+      </div>  
+      <div class="slide">
+        <img src="ARTED339Images/Race Car.png" class="image-slide" alt="Race Car"/>
+      </div> 
+      <div class="slide">
+        <img src="ARTED339Images/DestinationPoster.png" class="image-slide" alt="Tourist Poster"/>
+      </div> 
+      <div class="slide">
+        <img src="ARTED339Images/Shrek.jpg" class="image-slide" alt="Shrek"/>
+      </div> 
+
+      <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          
+    </div> 
+  </div>
+  
+  <script>
+    let slideIndex = 1;
+    showSlide(slideIndex);
+    
+    function openLightbox() {
+      document.getElementById('Lightbox').style.display = 'block';
+    };
+    
+    function closeLightbox() {
+      document.getElementById('Lightbox').style.display = 'none';
+    };
+    
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    };
+    
+    function toSlide(n) {
+      showSlide(slideIndex = n);
+    };
+    
+    function showSlide(n) {
+      const slides = document.getElementsByClassName('slide');
+      let modalPreviews = document.getElementsByClassName('modal-preview');
+    
+      if (n > slides.length) {
+        slideIndex = 1;	
+      };
+      
+      if (n < 1) {
+        slideIndex = slides.length;
+      };
+    
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      };
+      
+      for (let i = 0; i < modalPreviews.length; i++) {
+        modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+      };
+      
+      slides[slideIndex - 1].style.display = 'block';
+      modalPreviews[slideIndex - 1].className += ' active';
+    };
+  </script>
+  </div>
+</body>
+
+    <!--Footer-->
+        <footer>
+            <div class="instagram">
+                <a href="https://www.instagram.com/jennakayart/?igshid=YmMyMTA2M2Y%3D">
+                    <img src="../../logos/Instagram_.png" alt="Instagram" width="100%">
+                </a>
+                Instagram
+            </div>
+            <div class="tiktok">
+                <a href="https://www.tiktok.com/@jennakaywilson">
+                    <img src="../../logos/Tik_Tok.png" alt="Tik Tok" width="100%">
+                </a>
+                Tik Tok
+            </div>
+            <div class="mail">
+                <a href="mailto:jennawilson817@gmail.com">
+                    <img src="../../logos/Mail.png" alt="Email" width="100%">
+                </a>
+                Contact
+            </div>
+          </footer>
+        
+        </body>
+        </html>
+        
+        
+</html>
