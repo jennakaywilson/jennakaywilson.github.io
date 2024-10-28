@@ -1,0 +1,110 @@
+.instagram {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 115px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.instagram img {
+    margin-top: -20px;
+}
+
+.instagram img:hover {
+    margin-top: 0px;
+}
+
+.tiktok {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 65px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.tiktok img {
+    margin-top: -20px;
+}
+
+.tiktok img:hover {
+    margin-top: 0px;
+}
+
+.mail {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.mail img {
+    margin-top: -20px;
+}
+
+.mail img:hover {
+    margin-top: 0px;
+}
+
+.homelink {
+    position: fixed;
+    z-index: 3;
+}
+
+.logo {
+    position: absolute;
+    background-color: beige;
+    width: 200px;
+    height: 40px;
+    left: 16px;
+    top: 2px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.logo img{
+    margin-top: -64.92px;
+}
+
+.logo img:hover {
+    margin-top: 0px;
+}
+
+  /* Center Two Images */
+  #bufferleft {
+    left: 16.6666665%;
+    position: absolute;
+  }
+
+  #bufferright {
+    right: 16.6666665%;
+    position: absolute;
+  }
+
+  @media screen and (max-width: 700px) {
+    #bufferleft {
+        left: 0%;
+        position: relative;
+    }
+    #bufferright {
+        left: 0%;
+        position: relative;
+    }
+  }
+
+  /* Footer */
+footer {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    text-align: right;
+    margin-top: 20px;
+}

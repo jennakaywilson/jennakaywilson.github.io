@@ -1,0 +1,101 @@
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center the image */
+    max-width: 100%; /* Adjust as needed */
+    margin: 0 auto; /* Centers the container */
+    padding-top: 73px;
+}
+
+.image-wrapper {
+    display: flex; /* Center the image */
+    justify-content: center; /* Center the image horizontally */
+    width: 100%; /* Full width for proper alignment */
+}
+
+.responsive-image {
+    width: 50%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.caption {
+    margin-top: 10px; /* Space between the image and caption */
+    margin-left: auto; /* Align caption to the right */
+    margin-right: 25%; /* Add space to the right of the caption */
+    font-size: 12px;
+    color: #5d6366;
+    text-align: right; /* Align text to the right */
+    width: fit-content; /* Fit to content */
+}
+
+@media (max-width: 850px) {
+    .responsive-image {
+        width: 90%; /* Adjusts image size on smaller screens */
+    }
+    .caption {
+        margin-right: 5%; /* Add space to the right of the caption */
+}
+}
+
+
+.resume-container {
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center the image */
+    max-width: 100%; /* Adjust as needed */
+    margin: 0 auto; /* Centers the container */
+    padding: 0;
+}
+
+.resume-wrapper {
+    display: flex; /* Center the image */
+    justify-content: center; /* Center the image horizontally */
+    width: 100%; /* Full width for proper alignment */
+}
+
+.responsive-resume {
+    width: 50%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+@media (max-width: 850px) {
+    .responsive-resume {
+        width: 90%; /* Adjusts image size on smaller screens */
+    }
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center the image */
+    position: absolute;
+    left: 15%;
+    right: 5%;
+    max-width: 100%; /* Adjust as needed */
+    margin: 0 auto; /* Centers the container */
+    padding-top: 73px;
+}
+
+.about-wrapper {
+    display: flex; /* Center the image */
+    justify-content: center; /* Center the image horizontally */
+    width: 100%; /* Full width for proper alignment */
+}
+
+.responsive-about {
+    width: 50%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+@media (max-width: 850px) {
+    .responsive-about {
+        width: 90%; /* Adjusts image size on smaller screens */
+    }
+    .about-container {
+        right: 15%;
+    }
+}
+
+
+
+

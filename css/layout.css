@@ -1,247 +1,193 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Figtree', sans-serif;
-    padding: 10px;
-    margin: 0;
-    letter-spacing: 0.1em;
-}
-
-/* Navigation menu on small screen */
-.header {
-  font-family: 'Figtree', sans-serif;
-  color: black;
-  text-decoration: none;
-  font-size: 11.8pt;
-  display: block;
-  padding: 12px;
-  padding-right: 30px;
-  text-align: right;
-  z-index: 4;
-}
-
-#header {
-  position: absolute;
-  top: 27px;
-  right: 30px;
-  color: black;
-}
-
-.topnavresponsive{
-    overflow: hidden;
-    position:fixed;
-    top: 0;
-    width: 100%;
-    height: 265px;
-    z-index: 2;
-    background-color: white;
-    border-bottom: 0.1px solid #5d6366;
-}
-
-.header:hover {
-  color: #0e5f8f;
-}
-
-.main {
-  margin-top: 65px;
-}
-
 h1 {
-  font-family: 'Figtree', sans-serif;
-  font-size: 14pt;
-  letter-spacing: 0.1em;
+    font-family: 'Figtree', sans-serif;
+    font-size: 18pt;
+    font-weight: normal;
+    text-align: center;
+    color: #0e5f8f;
+    position: fixed;
+    padding-left: 33%;
+    padding-right: 33%;
+    padding-top: 2px;
+    background-color: white;
+    z-index: 2;
 }
 
-h2 {
-  font-family: 'Figtree', sans-serif;
-  font-size: 13pt;
-  letter-spacing: 0.1em;
-}
+@media (min-width: 850px) {
+    h1 {
+      display: none;
+    }
+    }
 
-h3 {
-  font-family: 'Figtree', sans-serif;
-  font-size: 12pt;
-  letter-spacing: 0.1em;
-  line-height: 2.3em;
-  text-align: justify;
-}
-
-/* Footer */
-footer {
+.buffer {
     background-color: white;
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 0; 
+    top: 0;
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 25px;
-    text-align: right;
-    margin-top: 20px;
-}
-  
-  /* Three columns */
-  .column {
-    float: left;
-    padding: 10px;
-  }
-  
-  /* Left and right column */
-  .column.side {
-    width: 25%;
-  }
-  
-  /* Middle column */
-  .column.middle {
-    width: 50%;
-  }
-
-  /*CV Dates column*/
-  .cvdate {
-    width: 33.33%;
-  }
-
-  /*CV Content column*/
-  .cvcontent{
-    width: 66.66%;  
-  }
-
-  
-  /* Clear floats after the columns */
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
-  }
-
-  .caption {
-    right: 30%;
-    float: right;
-    height: 15px;
-    font-size: 10px;
-    color: #5d6366;
+    height: 50px;
+    z-index: 1;
 }
 
-  /* Left and right column gallery*/
-  .column.side.gallery {
-    width: 33.33%;
-  }
-
-  /* Middle column */
-  .column.middle.gallery {
-    width: 33.33%;
-  }
-
-  /* Clear floats after the columns */
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
-    .column.side.gallery, .column.middle.gallery {
-      width: 100%;
+@media (min-width: 850px) {
+    .buffer {
+        display:none;
     }
-  }
+}
 
-  /* Image Hover Effect */
-  .column.side.gallery.home{
-    position: relative;
-  }
-  
-  .column.middle.gallery.home{
-    position: relative;
-  }
+.header {
+    background-color: white;
+}
 
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  
-  .center {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .column.side.gallery.home:hover .image {
-    opacity: 0.3;
-  }
-
-  .column.middle.gallery.home:hover .image {
-    opacity: 0.3;
-  }
-  
-  .column.side.gallery.home:hover .center {
-    opacity: 1;
-  }
-
-  .column.middle.gallery.home:hover .center {
-    opacity: 1;
-  }
-  
-  /* Text Box Hover Effect */
-  .link {
-    font-family: 'Figtree', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    color: black;
-    background-color: whitesmoke;
-    padding: 3px 9px;
+.header a {
     text-decoration: none;
-    border-radius: 2px;
-  }
-
-  .link:hover {
     color: #0e5f8f;
-    background-color: none;
-    text-decoration: none;
-    border-radius: 4px;
-  }
+}
 
-  /* When the screen is less than 600 pixels wide, show images as links */
-@media screen and (max-width: 700px) {
-  .column.side.gallery, .column.middle.gallery{
-    opacity: .9;
-  }
-  .center {
-    opacity: 1;
+body {
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* Aligns the items to the start (left) */
+    padding-left: 400px; /* Default padding */
+    padding-top: 75px; /* Optional: Add some top padding for aesthetics */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between images */
+    max-width: calc(100% - 300px); /* Ensures grid does not exceed the container width */
+    width: fit-content; /* Allows grid to shrink to fit items */
+    padding: 10px;
+    padding-bottom: 150px;
+}
+
+@media (max-width: 850px) {
+    .container {
+        padding-left: 20px; /* Remove padding when screen is less than 850px */
+        padding-right: 20px;
+        justify-content: center;
+    }
+
+    .image-grid {
+        max-width: 100%; /* Ensure the grid takes full width without exceeding it */
+    }
+}
+
+.grid-item {
+    width: 100%; /* Ensures full width of the grid item */
+    position: relative;
+    padding-top: 100%; /* Maintains a square aspect ratio */
+    overflow: hidden; /* Hides overflow */
+}
+
+.grid-item img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .link {
-    font-family: 'Figtree', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    color: black;
-    background-color: whitesmoke;
-    padding: 8px 32px;
-    text-decoration: none;
-    border-radius: 2px;
-  }
+    width:  100%; /* Allow width to auto adjust */
+    height: 100%; /* Fill the height */
+    transform: translate(-50%, -50%); /* Center the image */
+    object-fit: cover; /* Ensures the entire image fits within the square without distortion */
 }
+
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(247, 247, 247, 0.8); /* Black background with transparency */
+}
+
+.lightbox-content-wrapper {
+    position: relative; /* Keep it for caption positioning */
+    display: flex; /* Center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height to center the image */
+}
+
+.lightbox-content {
+    max-width: 90%; /* Limit the image width */
+    max-height: 80%; /* Limit the image height to allow space for the caption */
+    width: auto; /* Allow the width to adjust automatically */
+    height: auto; /* Allow the height to adjust automatically */
+    display: block; /* Ensure it behaves as a block element */
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color:rgba(0, 0, 0, .7);
+    font-size: 15px;
+    padding: 10px 0px;
+    padding-left: 20%;
+    text-align: left;
+    font-family: 'Figtree', sans-serif;
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+
+/* Show caption only when hovering over the image */
+.lightbox-content:hover + .lightbox-caption {
+    opacity: 1; /* Show caption on hover */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+    z-index: 1000;
+}
+
+.close:hover {
+    color: #0e5f8f;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    padding: 15px 50px; /* Increase padding for larger buttons */
+    font-size: 20px; /* Increase font size */
+    border-radius: 5px; /* Optional: Rounded corners */
+    transition: color 0.3s; /* Smooth color transition */
+    background-color: transparent;
+}
+
+@media (max-width: 850px) {
+    .prev, .next {
+        padding: 15px 20px;
+    }
+}
+
+.prev {
+    left: 20px; /* Position to the left */
+}
+
+.next {
+    right: 20px; /* Position to the right */
+}
+
+.prev:hover, .next:hover {
+    color: #0e5f8f;; /* Darker background on hover */
+}
+
 

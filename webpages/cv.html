@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jenna Wilson</title>
+  <link rel="icon" type="image/x-icon" href="content/favicon.png">
+
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/images.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/footer.css">
+
+</head>
+<body>
+  <div class="buffer"></div>
+    <div class="header">
+        <h1><a href="../index.html">Jenna Wilson</a></h1>
+    </div>
+  <div class="sidebar">
+    <div class="header">
+      <button class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="menu" id="menu">
+    <br><br>
+      <a id="name" href="../index.html">Jenna Wilson</a>
+      <br>
+      <a href="../webpages/collages.html">Collages</a>
+      <a href="../webpages/trash.html">Trash</a>
+      <a href="../webpages/psychosis.html">Psychosis</a>
+      <a href="#"></a>
+      <a href="../webpages/about.html">About</a>
+      <a href="#cv" class="active">Resume</a>
+      <a href="mailto:jennawilson817@gmail.com">Contact</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.toggle('open');
+    }
+  </script>
+
+<div class="resume-container">
+  <div class="resume-wrapper">
+      <img src="../content/bigresume1.png" alt="resume" class="responsive-resume">
+  </div>
+</div>
+<div class="resume-container">
+  <div class="resume-wrapper">
+      <img src="../content/bigresume2.png" alt="resume" class="responsive-resume">
+  </div>
+</div>
+<div> <br><br>
+      <br><br>
+      <br><br></div>
+
+
+  <!--Footer-->
+  <footer>
+    <div class="instagram">
+        <a href="https://www.instagram.com/jennakayart/?igshid=YmMyMTA2M2Y%3D">
+            <img src="../content/instagram.png" alt="Instagram" width="100%">
+        </a>
+        Instagram
+    </div>
+    <div class="tiktok">
+        <a href="https://www.tiktok.com/@jennakaywilson">
+            <img src="../content/tiktok.png" alt="Tik Tok" width="100%">
+        </a>
+        Tik Tok
+    </div>
+    <div class="mail">
+        <a href="mailto:jennawilson817@gmail.com">
+            <img src="../content/email.png" alt="Email" width="100%">
+        </a>
+        Contact
+    </div>
+  </footer>
+</body>
+</html>

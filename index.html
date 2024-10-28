@@ -1,146 +1,82 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <!--Stylesheets-->
-        <link rel="stylesheet" href="css/layout.css">
-        <link rel="stylesheet" href="css/socialmedia.css">
-        <link rel="stylesheet" href="css/hamburgermenu.css">
-        <link rel="stylesheet" href="css/dropdown.css">
+<html lang="en">
+<head>
     <!--Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-    <!--Responsive Webpage-->   
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Page Title-->
-    <title>Jenna Wilson-Home</title>
-    <link rel="icon" type="image/x-icon" href="logos/icon.jpg">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WRFEGCBGG"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 
-    gtag('config', 'G-5WRFEGCBGG');
-    </script>
-        <body>
-    <!--Page Navigation-->
-    <div class="homelink">
-      <div class="logo">
-        <a href="#home">
-          <img src="images/SignatureLogo.jpg" alt="Jenna Wilson Logo" width="200rem">
-        </a>
-      </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jenna Wilson</title>
+  <link rel="icon" type="image/x-icon" href="content/favicon.png">
+
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/images.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+</head>
+  <div class="buffer"></div>
+    <div class="header">
+       <h1>Jenna Wilson</h1>
     </div>
-    
-         <div class="topnav" id="myTopnav">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars" id="header"></i>
-              </a>
-            <div>
-                <a class="header" href="#home"> </a>
-                <a class="header" href="#home"> </a>
-                <a class="header" href="content/Resume/Resume.html">CV</a>
-                <a class="header" href="content/Bio/Bio.html">Bio</a>
-                <a class="header" href="mailto:jennawilson817@gmail.com">Contact</a> 
-                <a class="header" id="response" href="content/2023/2023.html">2023</a>
-                <a class="header" id="response" href="content/2022/2022.html">2022</a>
-                
-                  <div class="dropdown" id="buffer">
-                    <a class="dropbtn">2022
-                      <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                      <a href="content/2022/2022.html">2022
-                        <i class="fa fa-caret-down"></i>
-                      </a>
-                      <a href="content/2022/Psychosis.html">Psychosis</a>
-                    </div>
-                  </div> 
-                
-                
-                  <div class="dropdown">
-                    <a class="dropbtn"> 2023 
-                      <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                      <a href="content/2023/2023.html">2023 
-                        <i class="fa fa-caret-down"></i>
-                      </a>
-                      <a href="content/2023/Trash.html">Trash</a>
-                      <a href="content/2023/Summer.html">Summer</a>
-                      <a href="content/2023/ARTED339.html">ARTED 339</a>
-                    </div>
-                  </div> 
-                
-            </div>
-          </div>
-<script>
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += "responsive";
-      } else {
-        x.className = "topnav";
-      }
+  <div class="sidebar">
+    <div class="header">
+      <button class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="menu" id="menu">
+    <br><br>
+      <a id="name" href="#home">Jenna Wilson</a>
+      <br>
+      <a href="webpages/collages.html">Collages</a>
+      <a href="webpages/trash.html">Trash</a>
+      <a href="../webpages/psychosis.html">Psychosis</a>
+      <a href="#"></a>
+      <a href="webpages/about.html">About</a>
+      <a href="webpages/cv.html">Resume</a>
+      <a href="mailto:jennawilson817@gmail.com">Contact</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.toggle('open');
     }
-</script>     
-          
-    <!--Meat of the page-->      
-       <div class="main">
-        <div class="row">
-            <div class="column side gallery home">
-              <img class="image" src="images/StaticSummerSquare.jpg" alt="Pool scene" width="100%">
-              <div class="center">
-                    <a class="link" href="content/2023/Summer.html">Summer</a>
-              </div>
-            </div>
-            
-            <div class="column middle gallery home">
-              <img class="image" src="images/Trash_ReceiptSquare.jpg" alt="Drawing of a receipt" width="100%">
-              <div class="center">
-                <a class="link" href="content/2023/Trash.html">Trash</a>
-              </div>
-            </div>
-            
-            <div class="column side gallery home">
-              <img class="image" src="images/PsychosisSquare.jpg" alt="Abstract Lithographic Print" width="100%">
-              <div class="center">
-                <a class="link" href="content/2022/Psychosis.html">Psychosis</a>
-              </div>
-            </div>
-        </div>
-      </div>
+  </script>
+    <!--Content-->
+  <div class="image-container">
+    <div class="image-wrapper">
+        <img src="content/staticsummer.jpg" alt="painting of lifeguard sleeping at pool" class="responsive-image">
+    </div>
+    <p class="caption">Static Summer, Oil Paint on Canvas. 5 1/2 ft. x 5 1/2 ft.</p>
+</div>
     <!--Footer-->
-        <footer>
-            <div class="instagram">
-                <a href="https://www.instagram.com/jennakayart/?igshid=YmMyMTA2M2Y%3D">
-                    <img src="logos/Instagram_.png" alt="Instagram" width="100%">
-                </a>
-                Instagram
-            </div>
-            <div class="tiktok">
-                <a href="https://www.tiktok.com/@jennakaywilson">
-                    <img src="logos/Tik_Tok.png" alt="Tik Tok" width="100%">
-                </a>
-                Tik Tok
-            </div>
-            <div class="mail">
-                <a href="mailto:jennawilson817@gmail.com">
-                    <img src="logos/Mail.png" alt="Email" width="100%">
-                </a>
-                Contact
-            </div>
-          </footer>
-        
-        </body>
-        </html>
-        
-        
+  <footer>
+    <div class="instagram">
+        <a href="https://www.instagram.com/jennakayart/?igshid=YmMyMTA2M2Y%3D">
+            <img src="content/instagram.png" alt="Instagram" width="100%">
+        </a>
+        Instagram
+    </div>
+    <div class="tiktok">
+        <a href="https://www.tiktok.com/@jennakaywilson">
+            <img src="content/tiktok.png" alt="Tik Tok" width="100%">
+        </a>
+        Tik Tok
+    </div>
+    <div class="mail">
+        <a href="mailto:jennawilson817@gmail.com">
+            <img src="content/email.png" alt="Email" width="100%">
+        </a>
+        Contact
+    </div>
+  </footer>
+</body>
 </html>
