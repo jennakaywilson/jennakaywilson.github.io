@@ -18,6 +18,29 @@
     height: auto; /* Maintains aspect ratio */
 }
 
+.responsive-image2 {
+    width: 40%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.caption2 {
+    margin-top: 10px; /* Space between the image and caption */
+    margin-left: auto; /* Align caption to the right */
+    margin-right: 30%; /* Add space to the right of the caption */
+    font-size: 12px;
+    color: #5d6366;
+    text-align: right; /* Align text to the right */
+    width: fit-content; /* Fit to content */
+}
+
+@media (max-width: 850px) {
+    .responsive-image2 {
+        width: 90%; /* Adjusts image size on smaller screens */
+    }
+    .caption2 {
+        margin-right: 5%; /* Add space to the right of the caption */
+}
+}
 .caption {
     margin-top: 10px; /* Space between the image and caption */
     margin-left: auto; /* Align caption to the right */

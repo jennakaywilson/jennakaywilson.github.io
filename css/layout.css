@@ -143,6 +143,12 @@ body {
     opacity: 1; /* Show caption on hover */
 }
 
+@media (max-width: 850px) {
+    .lightbox-caption {
+        opacity: 1;
+    }
+}
+
 .close {
     position: absolute;
     top: 20px;

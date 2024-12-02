@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jenna Wilson</title>
+  <link rel="icon" type="image/x-icon" href="content/favicon.png">
+
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/images.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/footer.css">
+
+</head>
+<body>
+  <div class="buffer"></div>
+    <div class="header">
+        <h1><a href="../index.html">Jenna Wilson</a></h1>
+    </div>
+  <div class="sidebar">
+    <div class="header">
+      <button class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="menu" id="menu">
+        <br><br>
+          <a id="name" href="../webpages/titlepage.html">Jenna Wilson</a>
+          <br>
+          <a href="../webpages/teachingphilosophy.html">Teaching Philosophy</a>
+          <a href="../webpages/resume2.html">Resume</a>
+          <a href="#studentart" class="active">Student Art</a>
+          <a href="curriculumsamples.html">Curriculum Samples</a>
+          <a href="#"></a>
+          <a href="mailto:jennawilson817@gmail.com">Contact</a>
+          <a href="../index.html">Creative Portfolio</a>
+        </div>
+      </div>
+  <script>
+    function toggleMenu() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.toggle('open');
+    }
+  </script>
+<div class="container">
+    <div class="image-grid">
+        <div class="grid-item">
+            <img src="../content/studentwork/exhibition(1).jpeg" alt="Student Exhibition View 1: DRAWING" onclick="openLightbox(this)">
+          </div>
+        <div class="grid-item">
+        <img src="../content/studentwork/exhibition(2).jpeg" alt="Student Exhibition View 2: DRAWING" onclick="openLightbox(this)">
+        </div>
+        <div class="grid-item">
+            <img src="../content/studentwork/exhibition(3).jpeg" alt="Student Exhibition View 3: DRAWING" onclick="openLightbox(this)">
+          </div>
+        <div class="grid-item">
+        <img src="../content/studentwork/paintingcat.jpeg" alt="CAT
+        
+        Student Painting Project: 'Non-locale Color Painting'" onclick="openLightbox(this)">
+        </div>
+        <div class="grid-item">
+        <img src="../content/studentwork/paintingdog.jpeg" alt="DOG
+        
+        Student Painting Project: 'Non-locale Color Painting'" onclick="openLightbox(this)">
+        </div>
+        <div class="grid-item">
+            <img src="../content/studentwork/paintingstopsign.jpeg" alt="COLLABORATE AND LISTEN
+            
+            Student Painting Project: 'Non-locale Color Painting'" onclick="openLightbox(this)">
+          </div>
+      <div class="grid-item">
+        <img src="../content/studentwork/ceramicsduck.jpeg" alt="DUCK
+        
+        Student Ceramics Project: 'Themed Teapot'" onclick="openLightbox(this)">
+      </div>
+      <div class="grid-item">
+        <img src="../content/studentwork/ceramicsflowers.jpeg" alt="FLOWERS
+        
+        Student Ceramics Project: 'Themed Teapot'" onclick="openLightbox(this)">
+      </div>
+      <div class="grid-item">
+        <img src="../content/studentwork/ceramicsshark.jpeg" alt="SHARK
+        
+        Student Ceramics Project: 'Themed Teapot'" onclick="openLightbox(this)">
+      </div>
+      <div class="grid-item">
+        <img src="../content/studentwork/contourcementtruck.jpeg" alt="TRUCK
+        
+        Student Drawing Project: 'Contour Line Drawing'" onclick="openLightbox(this)">
+      </div>
+      <div class="grid-item">
+        <img src="../content/studentwork/contourringpop.jpeg" alt="RING POP
+        
+        Student Drawing Project: 'Contour Line Drawing'" onclick="openLightbox(this)">
+      </div>
+      <div class="grid-item">
+        <img src="../content/studentwork/contourtinycar.jpeg" alt="TINY CAR
+        
+        Student Drawing Project: 'Contour Line Drawing'" onclick="openLightbox(this)">
+      </div>
+      <div class="grid-item">
+        <img src="../content/studentwork/gridjaguar.jpeg" alt="JAGUAR
+        
+        Student Drawing Project: 'Grid Drawing'" onclick="openLightbox(this)">
+      </div>
+      <div class="grid-item">
+        <img src="../content/studentwork/gridpanda.jpeg" alt="PANDA
+        
+        Student Drawing Project: 'Grid Drawing'" onclick="openLightbox(this)">
+      </div>
+      <div class="grid-item">
+        <img src="../content/studentwork/gridstingray.jpeg" alt="STINGRAY
+        
+        Student Drawing Project: 'Grid Drawing'" onclick="openLightbox(this)">
+      </div>
+  </div>
+
+        
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <div class="lightbox-content-wrapper">
+      
+          <button class="prev" onclick="changeImage(-1); event.stopPropagation();"> &#10094;</button>
+          <img class="lightbox-content" id="lightbox-img">
+          <div class="lightbox-caption" id="lightbox-caption"></div>
+          <button class="next" onclick="changeImage(1); event.stopPropagation();"> &#10095;</button>
+      
+        </div>
+      </div>  
+      
+      <script>
+    let currentIndex = 0; // Global variable to keep track of the current image index
+    const images = []; // Array to store image elements
+    
+    function openLightbox(img) {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxCaption = document.getElementById("lightbox-caption");
+    
+      // Reset the current index based on the clicked image
+      currentIndex = Array.from(document.querySelectorAll('.image-grid img')).indexOf(img);
+      images.length = 0; // Clear previous images
+      document.querySelectorAll('.image-grid img').forEach(image => images.push(image));
+    
+      lightbox.style.display = "block"; // Show the lightbox
+      lightboxImg.src = img.src; // Set the lightbox image source
+      lightboxCaption.innerText = img.alt; // Set the caption from alt text
+    }
+    
+    function changeImage(direction) {
+      currentIndex += direction; // Update index based on direction
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1; // Loop back to the last image
+      } else if (currentIndex >= images.length) {
+        currentIndex = 0; // Loop back to the first image
+      }
+    
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxCaption = document.getElementById("lightbox-caption");
+    
+      lightboxImg.src = images[currentIndex].src; // Update the lightbox image source
+      lightboxCaption.innerText = images[currentIndex].alt; // Update the caption
+    }
+    
+      
+      function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.style.display = "none"; // Hide the lightbox
+      }
+      </script>
+
+  <!--Footer-->
+  <footer>
+    <div class="instagram">
+        <a href="https://www.instagram.com/jennakayart/?igshid=YmMyMTA2M2Y%3D">
+            <img src="../content/instagram.png" alt="Instagram" width="100%">
+        </a>
+        Instagram
+    </div>
+    <div class="tiktok">
+        <a href="https://www.tiktok.com/@jennakaywilson">
+            <img src="../content/tiktok.png" alt="Tik Tok" width="100%">
+        </a>
+        Tik Tok
+    </div>
+    <div class="mail">
+        <a href="mailto:jennawilson817@gmail.com">
+            <img src="../content/email.png" alt="Email" width="100%">
+        </a>
+        Contact
+    </div>
+  </footer>
+</body>
+</html>
